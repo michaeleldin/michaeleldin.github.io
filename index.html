@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Eldin — System Validation Engineer</title>
+  <meta name="description" content="Michael Eldin — System Validation Engineer at Intel. Portfolio showcasing hardware projects, FPGA design, and security validation expertise.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ═══════════════════ NAVIGATION ═══════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">ME<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#volunteering">Volunteering</a></li>
+        <li><a href="#fun">Fun</a></li>
+        <li><a href="assets/Michael_Eldin_CV.pdf" class="nav-cv-btn" target="_blank" rel="noopener">Download CV</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════ HERO ═══════════════════ -->
+  <header class="hero" id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-content reveal">
+      <div class="avatar" aria-label="Michael Eldin initials">ME</div>
+      <h1>Michael Eldin</h1>
+      <p class="hero-title">System Validation Engineer @ Intel</p>
+      <p class="hero-location">Shoham, Israel</p>
+      <div class="hero-icons">
+        <a href="mailto:michaeldin770@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/michael-eldin-37a20b162/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/michaeleldin" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- ═══════════════════ ABOUT / SKILLS ═══════════════════ -->
+  <section class="section" id="about">
+    <div class="container">
+      <h2 class="section-title reveal">About Me</h2>
+      <p class="section-intro reveal">
+        System Validation Engineer with 7+ years at Intel, specializing in CPU security validation, 
+        hardware/software co-design, and Python-based automation. Passionate about bridging the gap 
+        between hardware design and intelligent tooling.
+      </p>
+
+      <div class="skills-grid reveal">
+        <div class="skill-category">
+          <h3><span class="skill-icon">&#9881;</span> Tools</h3>
+          <div class="tags">
+            <span class="tag">Verdi</span>
+            <span class="tag">Zebu (Synopsys)</span>
+            <span class="tag">Perspec (Cadence)</span>
+            <span class="tag">Emulation</span>
+            <span class="tag">VS Code + GitHub Copilot</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><span class="skill-icon">&lt;/&gt;</span> Programming</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">SystemVerilog</span>
+            <span class="tag">Assembly</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><span class="skill-icon">&#128274;</span> Domains</h3>
+          <div class="tags">
+            <span class="tag">CPU Architecture</span>
+            <span class="tag">Security Validation</span>
+            <span class="tag">Firmware</span>
+            <span class="tag">MKTME</span>
+            <span class="tag">TSE</span>
+            <span class="tag">D2D Encryption</span>
+            <span class="tag">SAI</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ EXPERIENCE ═══════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <h2 class="section-title reveal">Experience &amp; Education</h2>
+
+      <div class="timeline">
+        <!-- Job 1 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">July 2021 — Present</div>
+          <div class="timeline-card">
+            <h3>System Validation Engineer</h3>
+            <p class="timeline-company">Intel — Jerusalem</p>
+            <ul>
+              <li>Building AI agents with GitHub Copilot to accelerate team debug capabilities</li>
+              <li>Designed and executed security validation test plans for CPU subsystems, improving bug detection</li>
+              <li>Performed verification of CPU security features, finding <strong>60 hardware bugs</strong></li>
+              <li>Collaborated with architects and RTL designers to root-cause failures using waveform debug tools</li>
+              <li>Implemented Python-based automation frameworks for coverage analysis, reducing manual debug time</li>
+              <li>Mentored junior validation engineers on validation methodologies and best practices</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Job 2 -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">Jan 2019 — July 2021</div>
+          <div class="timeline-card">
+            <h3>Post-Silicon Validation Engineer</h3>
+            <p class="timeline-company">Intel — Jerusalem</p>
+            <ul>
+              <li>Developed and executed PLL validation test plans</li>
+              <li>Performed silicon bring-up and characterization, ensuring hardware meets design specifications</li>
+              <li>Collaborated with design teams to validate complex timing requirements</li>
+              <li>Created Python-based automated drivers and lab frameworks to scale validation workflows</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="timeline-item reveal">
+          <div class="timeline-dot dot-edu"></div>
+          <div class="timeline-date">Graduated May 2019</div>
+          <div class="timeline-card">
+            <h3>B.Sc. in Electronics Engineering</h3>
+            <p class="timeline-company">Jerusalem College of Technology (JCT)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-download reveal">
+        <a href="assets/Michael_Eldin_CV.pdf" class="btn btn-primary" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Full CV (PDF)
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ PROJECTS ═══════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <h2 class="section-title reveal">Projects</h2>
+
+      <div class="card-grid">
+        <!-- CubeHash -->
+        <article class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><path d="M7 2v20M17 2v20M2 12h20M2 7h20M2 17h20"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/michaeldin/cubehash" target="_blank" rel="noopener" aria-label="GitHub repo" title="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <a href="https://youtu.be/nfsf__5VdeM" target="_blank" rel="noopener" aria-label="Demo video" title="Watch demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">CubeHash FPGA Implementation</h3>
+          <span class="card-badge">&#127942; Open HW Finalist 2019</span>
+          <p class="card-desc">
+            B.Sc. final project — a full hardware/software co-integration of CubeHash16/32-256, 
+            a cryptographic hash function submitted to the NIST SHA-3 competition. 
+            Implements the algorithm in Verilog on a Basys 3 (Artix-7) FPGA, 
+            communicating with a Raspberry Pi Zero for I/O. 
+            Achieved ~181 MHz clock frequency with minimal FPGA utilization.
+          </p>
+          <div class="tags">
+            <span class="tag">Verilog</span>
+            <span class="tag">FPGA</span>
+            <span class="tag">Cryptography</span>
+            <span class="tag">Raspberry Pi</span>
+            <span class="tag">Python</span>
+          </div>
+          <a href="https://openhw.eu/2019" class="card-ext-link" target="_blank" rel="noopener">
+            Open Hardware Competition 2019 &#8594;
+          </a>
+        </article>
+
+        <!-- PCB Business Card -->
+        <article class="card reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="1" y="4" width="22" height="16" rx="2"/><circle cx="8" cy="12" r="2"/><line x1="14" y1="8" x2="20" y2="8"/><line x1="14" y1="12" x2="20" y2="12"/><line x1="14" y1="16" x2="18" y2="16"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/michaeldin/PCB-Business-Card" target="_blank" rel="noopener" aria-label="GitHub repo" title="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">PCB Business Card</h3>
+          <p class="card-desc">
+            A custom-designed PCB shaped as a business card, built entirely from discrete logic gates.
+            Uses an NE555 timer generating a 1 Hz clock driving a 4-bit counter (D flip-flops), 
+            with combinational logic to display a phone number on 7-segment LEDs. 
+            Includes an integrated QR code with contact information. Powered by a CR2032 coin cell.
+          </p>
+          <div class="card-img-container">
+            <img src="https://raw.githubusercontent.com/michaeldin/PCB-Business-Card/main/Photos/demonstration_gif.gif" 
+                 alt="PCB Business Card demonstration — LEDs displaying digits" 
+                 class="card-img" loading="lazy">
+          </div>
+          <div class="tags">
+            <span class="tag">PCB Design</span>
+            <span class="tag">Logic Gates</span>
+            <span class="tag">74HC Series</span>
+            <span class="tag">NE555</span>
+            <span class="tag">Hardware</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ VOLUNTEERING ═══════════════════ -->
+  <section class="section section-alt" id="volunteering">
+    <div class="container">
+      <h2 class="section-title reveal">Volunteering</h2>
+
+      <div class="card-grid card-grid-single">
+        <article class="card card-wide reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="https://drive.google.com/file/d/1slaqE1AHA_cxC9Z8r8HAOf68uBIFROk2/view" target="_blank" rel="noopener" aria-label="Learn more" title="Certificate / Details">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">Computer Science Unplugged</h3>
+          <p class="card-desc">
+            Taught computer science fundamentals to haredi children using hands-on, unplugged teaching methods — 
+            no computers needed. Activities covered algorithms, binary numbers, data representation, and logical thinking. 
+            This volunteer work improved digital literacy access in underserved communities, 
+            making abstract computer science concepts tangible and engaging for young learners.
+          </p>
+          <div class="card-img-container">
+            <img src="assets/volunteering-preview.jpg" 
+                 alt="CS Unplugged volunteering session" 
+                 class="card-img" loading="lazy">
+          </div>
+          <div class="tags">
+            <span class="tag">Education</span>
+            <span class="tag">CS Unplugged</span>
+            <span class="tag">Community</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FUN ═══════════════════ -->
+  <section class="section" id="fun">
+    <div class="container">
+      <h2 class="section-title reveal">Fun</h2>
+
+      <div class="card-grid card-grid-single">
+        <article class="card card-wide reveal">
+          <div class="card-header">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="2"/><rect x="6" y="6" width="4" height="4" rx="0.5"/><rect x="14" y="6" width="4" height="4" rx="0.5"/><rect x="6" y="14" width="4" height="4" rx="0.5"/><rect x="14" y="14" width="4" height="4" rx="0.5"/></svg>
+            </div>
+            <div class="card-links">
+              <a href="https://github.com/michaeleldin/the-floor-game" target="_blank" rel="noopener" aria-label="GitHub repo" title="GitHub repo">
+                <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+              </a>
+              <a href="https://michaeleldin.github.io/the-floor-game/" target="_blank" rel="noopener" aria-label="Play the game" title="Play live">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="card-title">The Floor — Web Game</h3>
+          <p class="card-desc">
+            A single-screen web game inspired by the TV show "The Floor". 
+            One host controls everything — set up the board with player names, colors, and image categories, 
+            then run turn-based duels where players identify images under a 45-second clock. 
+            Winners conquer all tiles of the loser until one champion owns the entire board.
+          </p>
+          <div class="card-img-container">
+            <img src="assets/the-floor-preview.jpg" 
+                 alt="The Floor web game preview" 
+                 class="card-img" loading="lazy">
+          </div>
+          <div class="tags">
+            <span class="tag">Building with AI</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-icons">
+        <a href="mailto:michaeldin770@gmail.com" aria-label="Email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/michael-eldin-37a20b162/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="https://github.com/michaeleldin" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+        </a>
+      </div>
+      <p class="footer-text">&copy; 2026 Michael Eldin. Built with HTML, CSS &amp; vanilla JS.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
