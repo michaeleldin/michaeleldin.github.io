@@ -10,6 +10,7 @@
   --bg-card:      #ffffff;
   --bg-card-hover:#f9fafb;
   --border:       #d1d5db;
+  --outline:      rgba(31, 41, 55, 0.16);
   --text-primary: #1f2937;
   --text-secondary:#4b5563;
   --text-muted:   #6b7280;
@@ -46,6 +47,16 @@ body {
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 14px;
+  border: 1px solid var(--outline);
+  border-radius: 18px;
+  pointer-events: none;
+  z-index: 1500;
 }
 
 a { color: var(--accent); text-decoration: none; transition: color var(--transition); }
@@ -651,6 +662,11 @@ ul { list-style: none; }
 @media (max-width: 480px) {
   .section { padding: 56px 0; }
   .container { padding: 0 16px; }
+
+  body::before {
+    inset: 8px;
+    border-radius: 14px;
+  }
 
   .hero h1 { font-size: 2rem; }
   .avatar { width: 90px; height: 90px; font-size: 1.8rem; }
