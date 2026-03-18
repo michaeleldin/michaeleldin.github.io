@@ -19,6 +19,7 @@
   hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('open');
     navLinks.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(navLinks.classList.contains('open')));
   });
 
   // Close mobile menu when a link is clicked
@@ -26,6 +27,7 @@
     a.addEventListener('click', () => {
       hamburger.classList.remove('open');
       navLinks.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
     });
   });
 
