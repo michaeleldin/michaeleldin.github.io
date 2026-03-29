@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Michael Eldin - CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --page-bg: #eef1f4;
+      --paper: #ffffff;
+      --text: #16202a;
+      --muted: #5d6b79;
+      --accent: #0f6cbd;
+      --accent-soft: #dbeafe;
+      --border: #d7dee6;
+      --heading: #0b1724;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 14px;
+    }
+
+    body {
+      margin: 0;
+      font-family: "DM Sans", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f3f5f7 0%, #e9edf1 100%);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 14mm;
+      background: var(--paper);
+      box-shadow: 0 18px 50px rgba(15, 23, 36, 0.12);
+    }
+
+    .header {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr;
+      gap: 20px;
+      align-items: start;
+      padding-bottom: 16px;
+      border-bottom: 2px solid var(--heading);
+    }
+
+    .name {
+      margin: 0;
+      font-size: 2.2rem;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      color: var(--heading);
+    }
+
+    .role {
+      margin: 8px 0 0;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      text-transform: uppercase;
+    }
+
+    .summary {
+      margin: 14px 0 0;
+      max-width: 95%;
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    .contact {
+      display: grid;
+      gap: 8px;
+      justify-items: end;
+      font-size: 0.95rem;
+      color: var(--muted);
+    }
+
+    .contact strong {
+      color: var(--heading);
+      font-weight: 700;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 1.7fr 0.9fr;
+      gap: 24px;
+      margin-top: 18px;
+    }
+
+    .section {
+      margin-bottom: 18px;
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+    }
+
+    .section-title {
+      display: inline-block;
+      margin: 0 0 10px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .entry {
+      margin-bottom: 14px;
+    }
+
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+
+    .entry-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      margin-bottom: 4px;
+    }
+
+    .entry-title {
+      margin: 0;
+      font-size: 1.02rem;
+      color: var(--heading);
+    }
+
+    .entry-date {
+      white-space: nowrap;
+      color: var(--muted);
+      font-size: 0.86rem;
+      font-weight: 500;
+    }
+
+    .entry-subtitle {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 18px;
+    }
+
+    li {
+      margin-bottom: 4px;
+      line-height: 1.42;
+    }
+
+    .panel {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px;
+      background: linear-gradient(180deg, #ffffff 0%, #fbfcfd 100%);
+    }
+
+    .stack {
+      display: grid;
+      gap: 12px;
+    }
+
+    .label {
+      margin: 0 0 6px;
+      color: var(--heading);
+      font-size: 0.88rem;
+      font-weight: 700;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      padding: 5px 9px;
+      border-radius: 999px;
+      background: #f3f7fb;
+      border: 1px solid #d8e5f4;
+      color: #23425f;
+      font-size: 0.78rem;
+      line-height: 1.2;
+    }
+
+    .project {
+      margin-bottom: 10px;
+    }
+
+    .project:last-child {
+      margin-bottom: 0;
+    }
+
+    .project h4,
+    .edu h4 {
+      margin: 0 0 4px;
+      font-size: 0.94rem;
+      color: var(--heading);
+    }
+
+    .project p,
+    .edu p,
+    .note {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .highlight {
+      color: var(--heading);
+      font-weight: 700;
+    }
+
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .page {
+        width: auto;
+        min-height: auto;
+        margin: 0;
+        padding: 24px;
+        box-shadow: none;
+      }
+
+      .header,
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .contact {
+        justify-items: start;
+      }
+
+      .summary {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="header">
+      <div>
+        <h1 class="name">Michael Eldin</h1>
+        <p class="role">Pre-Silicon Functional Validation Engineer</p>
+        <p class="summary">
+          Validation engineer with 7+ years at Intel, currently focused on emulation-based CPU security validation.
+          Strong background in pre-silicon debug, waveform analysis, automation, and cross-functional collaboration with
+          architects and RTL designers. Proven record of finding <span class="highlight">60+ RTL and hardware bugs</span>
+          across security features including MKTME, TSE, D2D Encryption, and SAI.
+        </p>
+      </div>
+      <div class="contact">
+        <div><strong>Email:</strong> <a href="mailto:michaeldin770@gmail.com">michaeldin770@gmail.com</a></div>
+        <div><strong>Phone:</strong> 054-7297789</div>
+        <div><strong>Location:</strong> Shoham, Israel</div>
+        <div><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/michael-eldin-37a20b162/">michael-eldin-37a20b162</a></div>
+        <div><strong>GitHub:</strong> <a href="https://github.com/michaeleldin">github.com/michaeleldin</a></div>
+      </div>
+    </header>
+
+    <section class="layout">
+      <div>
+        <section class="section">
+          <h2 class="section-title">Experience</h2>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Pre-Silicon Functional Validation Engineer</h3>
+              <div class="entry-date">Jul 2021 - Present</div>
+            </div>
+            <p class="entry-subtitle">Intel, Jerusalem</p>
+            <ul>
+              <li>Validate CPU security features on emulation models using Zebu, identifying 60+ RTL bugs across MKTME, TSE, D2D Encryption, and SAI.</li>
+              <li>Define and execute validation plans targeting pre-silicon coverage gaps to improve first-silicon readiness.</li>
+              <li>Root-cause complex failures through waveform analysis in Verdi and close collaboration with architects and RTL designers.</li>
+              <li>Build Python-based automation for coverage analysis and regression triage to reduce manual debug effort.</li>
+              <li>Develop AI-assisted debug agents with GitHub Copilot to accelerate investigation workflows across the team.</li>
+              <li>Mentor junior engineers on validation methodology, debug flow, and best practices.</li>
+            </ul>
+          </article>
+
+          <article class="entry">
+            <div class="entry-head">
+              <h3 class="entry-title">Post-Silicon Validation Engineer</h3>
+              <div class="entry-date">Jan 2019 - Jul 2021</div>
+            </div>
+            <p class="entry-subtitle">Intel, Jerusalem</p>
+            <ul>
+              <li>Executed PLL validation plans on production silicon, ensuring frequency and jitter targets were met.</li>
+              <li>Performed silicon bring-up and characterization on early steppings and identified spec-to-silicon deviations.</li>
+              <li>Collaborated with design teams on timing validation and post-silicon coverage closure.</li>
+              <li>Created Python-based automated drivers and lab frameworks to scale validation across multiple PLL variants.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section">
+          <h2 class="section-title">Selected Projects</h2>
+          <article class="project panel">
+            <h4>CubeHash FPGA Implementation</h4>
+            <p>
+              B.Sc. final project implementing CubeHash16/32-256 in Verilog on a Basys 3 FPGA with Raspberry Pi Zero I/O.
+              Selected as an <span class="highlight">Open Hardware Finalist</span>.
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <div class="stack">
+        <section class="section panel">
+          <h2 class="section-title">Core Skills</h2>
+
+          <div>
+            <p class="label">Validation / Debug</p>
+            <div class="chips">
+              <span class="chip">Pre-Silicon Validation</span>
+              <span class="chip">Emulation</span>
+              <span class="chip">Waveform Debug</span>
+              <span class="chip">Coverage Analysis</span>
+              <span class="chip">Regression Triage</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="label">Tools</p>
+            <div class="chips">
+              <span class="chip">Zebu</span>
+              <span class="chip">Verdi</span>
+              <span class="chip">Perspec</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">GitHub Copilot</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="label">Programming</p>
+            <div class="chips">
+              <span class="chip">Python</span>
+              <span class="chip">C</span>
+              <span class="chip">Assembly</span>
+            </div>
+          </div>
+
+          <div>
+            <p class="label">Domains</p>
+            <div class="chips">
+              <span class="chip">CPU Architecture</span>
+              <span class="chip">Security Validation</span>
+              <span class="chip">MKTME</span>
+              <span class="chip">TSE</span>
+              <span class="chip">D2D Encryption</span>
+              <span class="chip">SAI</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="section panel edu">
+          <h2 class="section-title">Education</h2>
+          <h4>B.Sc. in Electronics Engineering</h4>
+          <p>Jerusalem College of Technology</p>
+          <p class="note">Graduated May 2019</p>
+        </section>
+
+        <section class="section panel">
+          <h2 class="section-title">Additional</h2>
+          <p class="note">
+            Built internal AI-assisted debug workflows for validation teams and volunteered in Computer Science Unplugged,
+            teaching core CS concepts through hands-on activities.
+          </p>
+        </section>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
